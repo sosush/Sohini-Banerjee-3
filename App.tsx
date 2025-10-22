@@ -5,31 +5,10 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import { generateBio } from './services/geminiService';
 
 const App: React.FC = () => {
-  const [bio, setBio] = useState('');
-  const [isLoadingBio, setIsLoadingBio] = useState(true);
   const [hasEntered, setHasEntered] = useState(false);
   const [isGlitching, setIsGlitching] = useState(false);
-
-  // AI Bio Generation
-  const handleGenerateBio = async () => {
-    setIsLoadingBio(true);
-    try {
-      const newBio = await generateBio();
-      setBio(newBio);
-    } catch (error) {
-      console.error("Failed to generate bio in App component:", error);
-      setBio("An error occurred while generating a new bio. Please check the console for more details.");
-    } finally {
-      setIsLoadingBio(false);
-    }
-  };
-
-  useEffect(() => {
-    handleGenerateBio();
-  }, []);
 
   // Page-wide glitch effect
   useEffect(() => {
@@ -69,14 +48,14 @@ const App: React.FC = () => {
       <Header isVisible={hasEntered} />
       <main>
         <Hero onEnter={handleEnter} />
-        <About bio={bio} onGenerateBio={handleGenerateBio} isLoading={isLoadingBio} />
+        <About />
         <Skills />
         <Projects />
         <Contact />
       </main>
       <footer className="text-center py-8 px-6 text-green-400/50 font-mono text-sm">
         <div>Designed & Built by Jane Doe</div>
-        <p className="mt-2 max-w-2xl mx-auto">This portfolio is a dynamic React application, styled with Tailwind CSS, and features an AI-generated bio using Google's Gemini API.</p>
+        <p className="mt-2 max-w-2xl mx-auto">This portfolio is a dynamic React application, styled with Tailwind CSS.</p>
       </footer>
     </div>
   );
