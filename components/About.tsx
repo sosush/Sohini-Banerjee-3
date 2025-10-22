@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import MyImage from './gh-img.jpeg';
 
 const TypingHeading: React.FC<{ text: string }> = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [speed, setSpeed] = useState(150);
+
 
   useEffect(() => {
     const handleTyping = () => {
@@ -57,7 +59,7 @@ const About: React.FC = () => {
           <div className="md:w-1/3 flex justify-center">
             <div className="w-64 h-64 rounded-none overflow-hidden relative group border-4 border-green-500/50">
               <img 
-                src="components/169554443.jpeg" 
+                src={MyImage} 
                 alt="Profile" 
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
               />
