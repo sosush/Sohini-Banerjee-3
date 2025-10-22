@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { SOCIAL_LINKS, SKILLS, PROJECTS } from '../constants';
 import type { Project } from '../types';
+import resume from '../Sohini_Banerjee_Resume.pdf';
 
 interface CommandHistory {
   command: string;
@@ -111,7 +112,7 @@ const Contact: React.FC = () => {
         if (args[1] === 'resume.pdf') {
             newHistory.output = 'Opening resume...';
             // Replace this URL with the actual URL of your resume PDF
-            window.open('/Sohini_Banerjee_Resume.pdf', '_blank');
+            window.open(resume, '_blank');
         } else {
             newHistory.output = `xdg-open: file not found: ${args[1] || ''}`;
         }
