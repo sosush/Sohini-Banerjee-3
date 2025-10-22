@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
         break;
       case 'sudo':
         if (args[1] === '-c') {
-            newHistory.output = 'contact@engineer.dev';
+            newHistory.output = 'son20apakhi05@gmail.com';
         } else if (args[1] === '-s') {
             newHistory.output = (
                 <div className="flex items-center space-x-4">

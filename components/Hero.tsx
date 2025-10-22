@@ -132,10 +132,10 @@ const Hero: React.FC<HeroProps> = ({ onEnter }) => {
       <div className={`z-10 flex flex-col items-center max-w-4xl mx-auto transition-opacity duration-1000 ${entered ? 'opacity-100' : 'opacity-0'}`}>
         <p className="text-green-400 font-mono text-lg mb-4">Hi, my name is</p>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-4 font-mono leading-tight">
-          Sohini Banerjee.
+          Sohini Banerjee
         </h1>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-300/80 mb-8 font-mono">
-          I like building things.
+          I like building things
         </h2>
         <p className="text-lg text-green-300 leading-relaxed font-mono mb-10">
           I'm an computer science engineering student. I build websites for fun when I'm bored aka vibe coding. On a more serious note I am studying to be a Machine Learning Engineer.</p>

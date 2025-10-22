@@ -40,7 +40,9 @@ const TypingHeading: React.FC<{ text: string }> = ({ text }) => {
 };
 
 const About: React.FC = () => {
-  const staticBio = "I'm a computer science engineering student with a passion for building things for the web. My main focus is on Machine Learning, but I enjoy crafting dynamic user interfaces and exploring the intersection of AI and web development. I see code as a tool to build the future, one line at a time.";
+  const staticBio = "Hey there! I'm a computer science student on a mission to turn ideas into reality through code. Machine Learning is my playground—I love teaching computers to learn and predict—but I also get a kick out of crafting dynamic, interactive web interfaces that make users go 'wow!'. I’m endlessly curious about the intersection of AI and web development, exploring how smart tech can make everyday experiences smoother and more fun. To me, coding isn’t just work—it’s a creative adventure, a way to experiment, solve problems, and build the future one quirky line at a time. When I’m not buried in code, you’ll find me geeking out over new tech trends, experimenting with side projects, or dreaming up the next big idea!";
+
+
 
   return (
     <section id="about" className="py-24">
@@ -55,7 +57,7 @@ const About: React.FC = () => {
           <div className="md:w-1/3 flex justify-center">
             <div className="w-64 h-64 rounded-none overflow-hidden relative group border-4 border-green-500/50">
               <img 
-                src="https://picsum.photos/seed/tech-portfolio/400/400" 
+                src="components/169554443.jpeg" 
                 alt="Profile" 
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
               />

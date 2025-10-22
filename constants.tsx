@@ -172,6 +172,7 @@ export const PROJECTS: Project[] = [
                     'scikit-learn',
                       'transformers'],
         repoUrl: 'https://github.com/sosush/learn_buddy',
+        liveUrl: 'https://learn-buddy.netlify.app/',
     },
     {
         title: 'ForeCatcher',
@@ -189,7 +190,7 @@ export const PROJECTS: Project[] = [
         title: 'Portfolio',
         description: 'The one you are watching right now ;)',
         tags: ['Javascript', 'Typescript', 'HTML', 'CSS', 'react','react-dom'],
-        repoUrl: '#',
+        repoUrl: 'https://github.com/sosush/Sohini-Banerjee-3',
     },
 ];
 
