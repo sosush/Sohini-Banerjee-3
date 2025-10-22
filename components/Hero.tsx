@@ -138,7 +138,7 @@ const Hero: React.FC<HeroProps> = ({ onEnter }) => {
           I like building things
         </h2>
         <p className="text-lg text-green-300 leading-relaxed font-mono mb-10">
-          I'm an computer science engineering student. I build websites for fun when I'm bored aka vibe coding. On a more serious note I am studying to be a Machine Learning Engineer.</p>
+          I'm a computer science engineering student. I build websites for fun when I'm bored aka vibe coding. On a more serious note I am studying to be a Machine Learning Engineer.</p>
         <a 
           href="mailto:son20apakhi05@gmail.com" 
           onClick={(e) => e.stopPropagation()}
