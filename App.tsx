@@ -53,10 +53,6 @@ const App: React.FC = () => {
         <Projects />
         <Contact />
       </main>
-      <footer className="text-center py-8 px-6 text-green-400/50 font-mono text-sm">
-        <div>Designed & Built by Jane Doe</div>
-        <p className="mt-2 max-w-2xl mx-auto">This portfolio is a dynamic React application, styled with Tailwind CSS.</p>
-      </footer>
     </div>
   );
 };
