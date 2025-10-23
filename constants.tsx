@@ -162,7 +162,7 @@ export const PROJECTS: Project[] = [
     },
     {
         title: 'Learn Buddy',
-        description: 'A self-learning leerning platform that uses Machine learning to learn while teaching. It analyzes response accuracy and speed to adjust to the respective needs and learning pace.',
+        description: 'A self-learning, learning platform that uses Machine learning to learn while teaching. It analyzes response accuracy and speed to adjust to the respective needs and learning pace.',
         tags: ['CSS',
           'HTML',
             'Python',
