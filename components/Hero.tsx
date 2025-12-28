@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import resume from '../Sohini_Banerjee_Resume.pdf';
 
 // Hacker Lock SVG
 const HackerLockIcon: React.FC<{ isUnlocking: boolean }> = ({ isUnlocking }) => (
@@ -139,13 +140,24 @@ const Hero: React.FC<HeroProps> = ({ onEnter }) => {
         </h2>
         <p className="text-lg text-green-300 leading-relaxed font-mono mb-10">
           I'm a computer science engineering student. I build websites for fun when I'm bored aka vibe coding. On a more serious note I am studying to be a Machine Learning Engineer.</p>
-        <a 
-          href="mailto:son20apakhi05@gmail.com" 
-          onClick={(e) => e.stopPropagation()}
-          className="border border-green-500 text-green-500 font-semibold py-3 px-8 rounded-sm hover:bg-green-500/10 transition-all duration-300 font-mono text-lg"
-        >
-          Let's Connect
-        </a>
+        <div className="flex gap-4">
+          <a 
+            href="mailto:son20apakhi05@gmail.com" 
+            onClick={(e) => e.stopPropagation()}
+            className="border border-green-500 text-green-500 font-semibold py-3 px-8 rounded-sm hover:bg-green-500/10 transition-all duration-300 font-mono text-lg"
+          >
+            Let's Connect
+          </a>
+          <a 
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="bg-green-500 text-black font-semibold py-3 px-8 rounded-sm hover:bg-green-600 transition-all duration-300 font-mono text-lg"
+          >
+            My Resume
+          </a>
+        </div>
       </div>
     </section>
   );
